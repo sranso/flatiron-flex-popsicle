@@ -1,0 +1,82 @@
+/*https://speakerdeck.com/smashingmag/responsive-web-design-clever-tips-and-techniques*/
+/*@media screen and (max-width 33.236em) {*/
+  #main {
+    display: flex;
+    height: 100%;
+  }
+  #main > footer, #main > aside {
+    flex: 1;
+  }
+  #main > aside {
+    order: 2;
+  }
+  #main > article {
+    flex: 2;
+    order: 1;
+  }
+  #main > nav {
+    order: 0;
+  }
+  #main > header {
+    flex: 1;
+  }
+/*}*/
+body {
+  color: #131332;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  color: #101010;
+}
+a:hover {
+  text-decoration: none;
+  background-color: snow;
+  border-radius: 10px;
+}
+header, nav, article, aside, footer, .bannerad {
+  padding: 5px;
+}
+header.stick {
+  background-color: sandybrown;
+  height: 40px;
+  min-width: 100px;
+  margin: auto 0;
+  vertical-align: middle;
+}
+header.stick a {
+  font-weight: 700;
+}
+header {
+  background-color: deeppink;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+nav {
+  background-color: royalblue;
+}
+article {
+  background-color: violet;
+}
+aside {
+  background-color: blueviolet;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.bannerad {
+  background-color: turquoise;
+}
+footer {
+  background-color: springgreen;
+  word-wrap: break-word;
+}
